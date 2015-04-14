@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph_Widget</class>
+ <widget class="QWidget" name="Graph_Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graph</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="cB_resistance">
+       <property name="text">
+        <string>Resistance</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cB_Time">
+       <item>
+        <property name="text">
+         <string>all</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5 min</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>15 min</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>30 min</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1 hour</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2 hours</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6 hours</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1 day</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2 days</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1 week</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="PlotWidget" name="PlotWidget"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pBtn_Close">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

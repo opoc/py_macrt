@@ -55,3 +55,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Data_storage
+data_storage.db
