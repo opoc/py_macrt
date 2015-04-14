@@ -1,5 +1,7 @@
-py_macrt - Collect and plot data obtained from iMACRT modules
-=============================================================
+py_macrt
+========
+
+Collect and plot data obtained from iMACRT modules
 
 Installation
 ------------
